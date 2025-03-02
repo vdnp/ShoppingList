@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333333;
+}
+
+.head {
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #333333;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.form {
+  background-color: #f8f9fa;
+  color: #333333;
+  padding: 3rem 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.form input {
+  width: auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.form input:hover {
+  border-color: #aaa;
+}
+
+.form input:focus {
+  border-color: #aaaaaad3;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.form input::placeholder {
+  color: #333333;
+  font-style: italic;
+}
+
+.form select {
+  width: auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.form select:hover {
+  border-color: #aaa;
+}
+.form select:focus {
+  outline: none;
+  border-color: #aaaaaad3;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.form button {
+  background-color: #f8f9fa;
+  color: #333333;
+  width: auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.form button:hover {
+  border-color: #aaa;
+}
+
+.form button:focus {
+  outline: none;
+  border-color: #aaaaaad3;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.list {
+  list-style: none;
+  background-color: #f8f9fa;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.list li {
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+.list li::before {
+  content: "";
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.list li input {
+  cursor: pointer;
+}
+
+.list li input:hover {
+  background: #aaa;
+}
+
+.list li button {
+  background-color: #f8f9fa;
+  color: #333333;
+  width: auto;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5px;
+}
+
+.list li button:hover {
+  border-color: #aaa;
+}
+
+.list li button:focus {
+  outline: none;
+  border-color: #aaaaaad3;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.summary {
+  background-color: #f8f9fa;
+  color: #333333;
+  text-align: center;
+  font-size: 1rem;
+  padding: 2rem 2rem;
+  font-weight: 500;
+}
